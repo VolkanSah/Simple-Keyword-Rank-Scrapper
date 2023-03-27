@@ -1,9 +1,32 @@
-# Keyword-Rank-Checker-in-Python without API 
-Searchengines: Bing.de, Bing.com, Google.de, Google.com
+# Simple Keyword Rank Checker
+
+A simple Python script that checks the ranking of a given domain for specified keywords on selected search engines.
+
+**WARNING**: Scraping search engine results may violate their terms of service. Please consider using their official APIs (e.g., Google Search Console API or Bing Webmaster API) to obtain keyword rankings in a compliant manner.
+
+## Features
+
+- Supports Google and Bing search engines (google.de, bing.de, google.com, bing.com)
+- Allows users to input a domain and 1-5 keywords
+- Outputs keyword rankings in a text file
+
+## Requirements
+
+- Python 3
+- `requests`
+- `beautifulsoup4`
+
+## Installation
+
+1. Clone this repository:
+2. Install required libraries:
 
 ```bash
 pip install requests beautifulsoup4
 ```
+## Usage
+
+```python
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -68,3 +91,22 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+```
+
+1. Run the script:
+```bash
+python keyword_rank_checker.py
+```
+2. Follow the prompts to input the domain, search engine, and keywords.
+
+3. The keyword rankings will be saved in a text file named `keyword_rankings.txt`.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Disclaimer
+
+The author of this script is not responsible for any misuse or violations of search engines' terms of service. Please use this tool responsibly and respect the rules and guidelines of the respective search engines.
+
+
