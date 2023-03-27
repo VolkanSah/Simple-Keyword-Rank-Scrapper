@@ -26,7 +26,7 @@ pip install requests beautifulsoup4
 ```
 ## Usage
 
-```python
+
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -90,7 +90,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+
 ```
 
 1. Run the script:
