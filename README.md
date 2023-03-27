@@ -1,4 +1,4 @@
-# Simple Keyword Rank Checker
+# Simple Keyword Rank Checker (Scrapper)
 
 A simple Python script that checks the ranking of a given domain for specified keywords on selected search engines.
 
