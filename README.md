@@ -9,6 +9,7 @@ A simple Python script that checks the ranking of a given domain for specified k
 - Supports Google and Bing search engines (google.de, bing.de, google.com, bing.com)
 - Allows users to input a domain and 1-5 keywords
 - Outputs keyword rankings in a text file
+- you can ad your own search engines
 
 ## Requirements
 
