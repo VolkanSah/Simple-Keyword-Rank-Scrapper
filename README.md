@@ -94,8 +94,13 @@ if __name__ == "__main__":
 ```
 
 1. Run the script:
+
 ```bash
 python keyword_rank_checker.py
+```
+or
+```bash
+python3 keyword_rank_checker.py
 ```
 2. Follow the prompts to input the domain, search engine, and keywords.
 
