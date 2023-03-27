@@ -1,5 +1,5 @@
-# Keyword-Rank-Checker-in-Python
-Bing&amp;Google
+# Keyword-Rank-Checker-in-Python without API 
+Searchengines: Bing.de, Bing.com, Google.de, Google.com
 
 ```bash
 pip install requests beautifulsoup4
@@ -24,14 +24,25 @@ def get_rank(url, domain, search_engine):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
-    if search_engine.startswith("google"):
-        links = [a['href'] for a in soup.find_all('a', href=True)]
-        domain_links = [link for link in links if domain in link]
-    elif search_engine.startswith("bing"):
-        links = [a['href'] for a in soup.find_all('a', href=True)]
-        domain_links = [link for link in links if domain in link]
+    rank = -1
 
-    return domain_links
+    if search_engine.startswith("google"):
+        search_results = soup.find_all("div", class_="tF2Cxc")
+        for index, result in enumerate(search_results):
+            link = result.find("a")["href"]
+            if domain in link:
+                rank = index + 1
+                break
+
+    elif search_engine.startswith("bing"):
+        search_results = soup.find_all("li", class_="b_algo")
+        for index, result in enumerate(search_results):
+            link = result.find("a")["href"]
+            if domain in link:
+                rank = index + 1
+                break
+
+    return rank
 
 def save_to_file(filename, data):
     with open(filename, "w") as file:
