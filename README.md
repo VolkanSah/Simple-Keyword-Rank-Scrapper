@@ -109,7 +109,7 @@ python3 keyword_rank_checker.py
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed by Volkan Kücükbudak. See the [LICENSE](LICENSE) file for more details. 
 
 ## Disclaimer
 
