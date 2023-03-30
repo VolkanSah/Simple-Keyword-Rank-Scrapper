@@ -110,7 +110,7 @@ python3 keyword_rank_checker.py
 
 ## License
 
-This project is licensed by Volkan Kücükbudak. 
+This project is licensed by Volkan Kücükbudak. [Become a sponsor](https://github.com/sponsors/VolkanSah) 
 
 ## Disclaimer
 
